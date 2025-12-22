@@ -1,3 +1,6 @@
+import ProductsList from "../ProductsList";
+import {products} from "../product_data";
+
 export default function ProductsPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -6,8 +9,9 @@ export default function ProductsPage() {
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Products Page
           </h1>
+          <ProductsList products={products} />
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Welcome to the products page of our store.
+            Products page of our store.
           </p>
         </div>
       </main>
